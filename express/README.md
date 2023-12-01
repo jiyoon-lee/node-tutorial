@@ -34,3 +34,4 @@ app.delete('/posts/:id', function(req, res, next) {
 
 app.listen(8080)
 ```
+![image](https://github.com/jiyoon-lee/node-tutorial/assets/59562141/c6f5dbdb-7463-4213-a0fb-8b2d451a937e)
