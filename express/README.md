@@ -34,8 +34,12 @@ app.delete('/posts/:id', function(req, res, next) {
 
 app.listen(8080)
 ```
+<<<<<<< HEAD
 
 next함수를 호출하여 다음 미들웨어로 이동하고 response에 한번 반응하고 나면 더 이상 그 다음에 있는
 미들웨어에는 반응하지 않습니다. 한번 response를 보내고 나면 그 다음 미들웨어는 실행되지 않습니다.
 이처럼 요청이 들어왔을 때 서로 해당이 안되면 제일 마지막에 등록된 미들웨어가 실행이 되고
 마지막으로 등록된 미들웨어에서 에러를 던지거나 사용자에게 response를 응답할 수 있습니다.
+=======
+![image](https://github.com/jiyoon-lee/node-tutorial/assets/59562141/c6f5dbdb-7463-4213-a0fb-8b2d451a937e)
+>>>>>>> ff966d99dd1803f798fd2a47e57c17f67bbc4ca6
