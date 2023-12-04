@@ -1,4 +1,5 @@
 import * as tweetRepository from "../data/tweet.js";
+import * as userRepository from "../data/auth.js";
 
 export async function getTweets(req, res) {
   const username = req.query.username;
@@ -20,13 +21,14 @@ export async function getTweet(req, res) {
 
 export async function createTweet(req, res) {
   const { text, name, username } = req.body;
-  const tweet = await tweetRepository.create({ text, name, username });
+  const user = await userRepository.findByUsername(username);
+  const tweet = await tweetRepository.create({ text, userId: user.id });
   res.status(201).json(tweet);
 }
 
 export async function updateTweet(req, res) {
   const id = req.params.id;
-  const text = req.params.text;
+  const text = req.body.text;
   const tweet = await tweetRepository.update(id, text);
   if (tweet) {
     res.status(200).json(tweet);
