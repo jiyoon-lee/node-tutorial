@@ -1,37 +1,32 @@
 # 1. 데이터베이스란
 
-"A database is an organized collection of dta, generally stored and accessed electronically from a computer system."
-컴퓨터 파일 시스템에서 관련있는 거 끼리 모아놓는 것을 말합니다.
-Oracle, MySQL, DynamoDB, mongoDB, postgreSQL => 데이터베이스
+"A database is an organized collection of dta, generally stored and accessed electronically from a computer system."<br>
+컴퓨터 파일 시스템에서 관련있는 거 끼리 모아놓는 것을 말합니다.<br>
+Oracle, MySQL, DynamoDB, mongoDB, postgreSQL => 데이터베이스<br>
 
-하나의 파일을 데이터베이스로 사용하면 유연성이 떨어지고 불편하고 시간도 오래걸리고 성능도 좋지 않아
-이를 개선하고자 나온것이 데이터베이스 관리 시스템입니다.
+하나의 파일을 데이터베이스로 사용하면 유연성이 떨어지고 불편하고 시간도 오래걸리고 성능도 좋지 않아 이를 개선하고자 나온것이 데이터베이스 관리 시스템입니다.
 
-데이터베이스는 데이터를 저장하고 복잡한 데이터를 읽어오는데 최적화, 안전하게 동시다발적으로 가져올 수 있고
-대체적으로 우리 데이터를 좀 더 안전하고 빠르고 성능좋게 관리해주게 DBMS입니다.
+데이터베이스는 데이터를 저장하고 복잡한 데이터를 읽어오는데 최적화, 안전하게 동시다발적으로 가져올 수 있고 대체적으로 우리 데이터를 좀 더 안전하고 빠르고 성능좋게 관리해주게 DBMS입니다.
 
-DBMS를 두개로 나눌 수 있는데요.
-SQL => RDBMS(관계형 데이터베이스)
+DBMS를 두개로 나눌 수 있는데요.<br>
 
+### SQL => RDBMS(관계형 데이터베이스)
 1. 스키마(행, 열에 데이터를 넣습니다), 각각의 행에는 어떤 데이터 타입이 올 수있는 명시할 수 있습니다.
 2. 각각의 데이터들이 관계를 맞을 수 있습니다. 한 사용자가 여러개의 코멘트를 가지고 있는거처럼
    구조적으로 질의 응답을 할 수 있는 언어 => Sturctured Query Language(Designed for managing data in relational databases)
 
-NoSQL
-
+### NoSQL
 1. 빅데이터 부상, json이라는 문서같은 타입을 데이터베이스에 저장할 수 있을까
 2. 관계형 데이터베이스로만 표현하기에 문제 발생
-
 - Key-Value 데이터베이스(자바스크립트의 object와 비슷= 스키마가 정해져있지않다)
 - document 타입(폴더마다 연관된 데이터를 저장하는것과 같이 컬렉션 안에 연관된 문서를 저장해놓는 시스템)
 - Wide-Column 테이블 안에 또다른 테이블이 있는 2차원적인 데이터베이스
 - Graph
 
-서로 해결하고자 하는 문제가 다르다.
-어떤 용도로 어떤 목적에 맞게 사용하느냐에 따라 적절한 데이터베이스를 선택하도록 한다.
+서로 해결하고자 하는 문제가 다릅니다.<br>
+어떤 용도로 어떤 목적에 맞게 사용하느냐에 따라 적절한 데이터베이스를 선택하도록 합니다.<br>
 
 # 2. SQL 그 모든것
-
 SQL Database is an organized collection of one or more Tables of rows and columns.
 
 1. 여러가지 속성을 정의(Null, 자동 증가..등등)
@@ -43,7 +38,6 @@ SQL Database is an organized collection of one or more Tables of rows and column
 # 3. NoSQL 그 모든것
 
 MongoDB
-
 - Document 데이터베이스
 - 하나의 데이터는 json object처럼 object형태로 document로 관리할 수 있고
 - 관련있는 document를 모아주는 collection이 있습니다.
